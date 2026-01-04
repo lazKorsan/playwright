@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <aspectj.version>1.9.20.1</aspectj.version>
         <allure.version>2.27.0</allure.version>
+        <cucumber.version>7.18.0</cucumber.version>
     </properties>
 
     <dependencies>
@@ -32,7 +33,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- JUnit 5 Dependencies -->
+        <!-- JUnit 5 Dependencies (Cucumber ile TestNG kullanacaksanız JUnit'e gerek yok ama projede kalabilir) -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
@@ -96,6 +97,32 @@
             <version>${allure.version}</version>
             <scope>test</scope>
         </dependency>
+
+        <!-- 2. CUCUMBER (BDD) -->
+        <!-- Cucumber Java (Temel Kütüphane) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber TestNG (TestNG ile çalıştırmak için KRİTİK) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Cucumber PicoContainer (Step Definition'lar arası veri paylaşımı için) -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-picocontainer</artifactId>
+            <version>${cucumber.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

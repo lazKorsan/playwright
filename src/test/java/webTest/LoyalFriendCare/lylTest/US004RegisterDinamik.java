@@ -4,7 +4,7 @@ import com.microsoft.playwright.Page;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import webTest.LoyalFriendCare.Pages.LoyalFriendCarePages;
-import webTest.LoyalFriendCare.beginnerMethods.OpenLoyalfriendCare;
+import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 import webTest.LoyalFriendCare.beginnerMethods.RegisterMethod;
 import webTest.utilities.ReusableMethods;
 
@@ -14,7 +14,7 @@ public class US004RegisterDinamik {
     @Test
     public void tc01(){
 
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
 
         LoyalFriendCarePages loyalFriendCarePages = new LoyalFriendCarePages(page);
 
@@ -64,6 +64,6 @@ public class US004RegisterDinamik {
 
     @AfterTest
     public void tearDown() {
-        OpenLoyalfriendCare.closeTest();
+        BeforeAfter.closeTest();
     }
 }

@@ -1,13 +1,13 @@
 package webTest.LoyalFriendCare.lylTest;
 
 import org.testng.annotations.Test;
-import webTest.LoyalFriendCare.beginnerMethods.OpenLoyalfriendCare;
+import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 
 public class US001 {
 
     @Test
     public void tc01(){
-        OpenLoyalfriendCare.openLoyalFriendCarePage();
-        OpenLoyalfriendCare.closeTest();
+        BeforeAfter.openLoyalFriendCarePage();
+        BeforeAfter.closeTest();
     }
 }

@@ -4,22 +4,28 @@ import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
+import org.testng.annotations.Test;
 
-public class US008 {
+public class US010 {
 
-    public static void main(String[] args) {
+    @Test
+    public void tc01(){
 
         Playwright playwright = Playwright.create();
+
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
         Page page = browser.newPage();
 
-        String url = "https://testotomasyonu.com/";
-        page.navigate(url);
+        page.navigate("https://qa.loyalfriendcare.com/en/login");
 
-        System.out.println(page.title());
-        System.out.println(page.url());
-        BeforeAfter.closeTest();
+
+
+
+
+
+
 
     }
+
 }

@@ -4,7 +4,7 @@ import com.microsoft.playwright.Page;
 import org.testng.annotations.Test;
 import webTest.LoyalFriendCare.Pages.LoyalFriendCarePages;
 import webTest.LoyalFriendCare.beginnerMethods.LoginMethod;
-import webTest.LoyalFriendCare.beginnerMethods.OpenLoyalfriendCare;
+import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 
 public class US005Login {
 
@@ -15,7 +15,7 @@ public class US005Login {
     @Test
     public void tc01(){
 
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
 
         LoyalFriendCarePages loyalFriendCarePages = new LoyalFriendCarePages(page);
 

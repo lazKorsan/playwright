@@ -11,7 +11,7 @@ public class LoginMethod {
 
     public static Page loginUser(){
 
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
 
         LoyalFriendCarePages loyalFriendCarePages = new LoyalFriendCarePages(page);
 

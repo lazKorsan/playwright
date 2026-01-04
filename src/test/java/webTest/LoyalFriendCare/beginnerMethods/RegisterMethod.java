@@ -9,7 +9,7 @@ public class RegisterMethod {
     // Bu metodun Page nesnesini döndürmesi iyi olur, böylece test sınıfı kaldığı yerden devam edebilir.
     public static Page registerNewUser(){
         
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
         
         // Page nesnesini constructor'a veriyoruz
         LoyalFriendCarePages loyalFriendCarePages = new LoyalFriendCarePages(page);

@@ -4,7 +4,7 @@ import com.microsoft.playwright.Page;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import webTest.LoyalFriendCare.Pages.LoyalFriendCarePages;
-import webTest.LoyalFriendCare.beginnerMethods.OpenLoyalfriendCare;
+import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 
 public class US003 {
 
@@ -13,7 +13,7 @@ public class US003 {
     @Test
     public void tc01(){
         // Sayfayı aç ve Page nesnesini al
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
         
         // Page Object sınıfını başlat
         LoyalFriendCarePages loyalFriendCarePages = new LoyalFriendCarePages(page);
@@ -34,6 +34,6 @@ public class US003 {
 
     @AfterTest
     public void tearDown() {
-        OpenLoyalfriendCare.closeTest();
+        BeforeAfter.closeTest();
     }
 }
