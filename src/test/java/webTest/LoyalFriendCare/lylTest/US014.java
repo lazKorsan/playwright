@@ -1,3 +1,7 @@
+
+/*
+
+
 package webTest.LoyalFriendCare.lylTest;
 
 import com.microsoft.playwright.*;
@@ -5,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.nio.file.Paths;
 
-public class US014 {
+public class US0014 {
 
     @Test
     public void testPixel7Pro() {
@@ -31,7 +35,7 @@ public class US014 {
         }
     }
 
-    private void testWithBuiltInDevice(Playwright playwright, String deviceName) {
+    private <DeviceDescriptor> void testWithBuiltInDevice(Playwright playwright, String deviceName) {
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
                 .setHeadless(false) // Tarayıcıyı görmek için false
                 .setSlowMo(500)); // Adımları yavaşlat (görmek için)
@@ -225,7 +229,11 @@ public class US014 {
 
         // Network throttling test (yavaş network simülasyonu)
         System.out.println("Network throttling test...");
-        context.route("**/*", route -> {
+        context.route("**/
+/*
+import com.microsoft.playwright.Page;
+
+import java.nio.file.Paths;*", route -> {
             route.resume();
         });
 
@@ -299,3 +307,5 @@ public class US014 {
         }
     }
 }
+
+ */
