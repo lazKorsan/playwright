@@ -3,8 +3,7 @@ package webTest.LoyalFriendCare.lylTest;
 import com.microsoft.playwright.Page;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-import webTest.LoyalFriendCare.Pages.LoyalFriendCarePages;
-import webTest.LoyalFriendCare.beginnerMethods.OpenLoyalfriendCare;
+import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 
 
 
@@ -16,7 +15,7 @@ public class US002 {
     @Test
     public void tc01(){
 
-        Page page = OpenLoyalfriendCare.openLoyalFriendCarePage();
+        Page page = BeforeAfter.openLoyalFriendCarePage();
 
         // Playwright'ta XPath kullanımı:
         // Playwright XPath'i doğrudan destekler. "xpath=..." şeklinde veya doğrudan XPath yazarak kullanabilirsiniz.
@@ -40,7 +39,7 @@ public class US002 {
 
     @AfterTest
     public void tearDown() {
-        OpenLoyalfriendCare.closeTest();
+        BeforeAfter.closeTest();
 
     }
 }

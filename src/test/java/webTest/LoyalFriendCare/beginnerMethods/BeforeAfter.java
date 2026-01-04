@@ -6,9 +6,9 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 import webTest.utilities.ConfigLoader;
 
-public class OpenLoyalfriendCare {
+public class BeforeAfter {
 
-    private static Playwright playwright;
+    public static Playwright playwright;
     private static Browser browser;
     private static BrowserContext context;
     private static Page page;

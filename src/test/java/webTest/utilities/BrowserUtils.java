@@ -1,25 +1,35 @@
-package webTest.LoyalFriendCare.lylTest;
+package webTest.utilities;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
-import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
 
-public class US008 {
+public class BrowserUtils {
 
-    public static void main(String[] args) {
+    static Browser browser ;
+    static Page page ;
+
+    public static void browserOpen(String Url){
 
         Playwright playwright = Playwright.create();
+
+        playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
         Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+
         Page page = browser.newPage();
 
-        String url = "https://testotomasyonu.com/";
-        page.navigate(url);
+        page.navigate(Url);
 
         System.out.println(page.title());
-        System.out.println(page.url());
-        BeforeAfter.closeTest();
+
+    }
+
+    public static void testClose(){
+
+        page.close();
+        browser.close();
+
 
     }
 }
