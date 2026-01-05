@@ -15,11 +15,5 @@ public class US025 {
         page.type("//*[@id=\"APjFqb\"]","google");
         page.keyboard().press("Enter");
 
-
-
-
-
-
-
     }
 }
