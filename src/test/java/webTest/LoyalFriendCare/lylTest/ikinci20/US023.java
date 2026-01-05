@@ -2,7 +2,6 @@ package webTest.LoyalFriendCare.lylTest.ikinci20;
 
 import com.microsoft.playwright.Page;
 import org.testng.annotations.Test;
-import webTest.utilities.BrowserUtils;
 import webTest.utilities.DimensonsUtils;
 
 public class US023 {
