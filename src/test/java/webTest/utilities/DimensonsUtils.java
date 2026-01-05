@@ -45,7 +45,7 @@ public class DimensonsUtils {
 
         switch (browserName.toLowerCase()) {
             case "firefox":
-                return playwright.firefox().launch(launchOptions);
+                return playwright.firefox().launch(launchOptions.setHeadless(false).setArgs(java.util.Arrays.asList("--start-maximized")));
             case "webkit":
                 return playwright.webkit().launch(launchOptions);
             case "chrome":
@@ -181,6 +181,7 @@ public class DimensonsUtils {
             case "twitter": return "https://twitter.com";
             case "linkedin": return "https://linkedin.com";
             case "loyalfriend": return "https://qa.loyalfriendcare.com";
+            case "testotomasyonu": return "https://testotomasyonu.com/";
             default:
                 return siteName.startsWith("http") ? siteName : "https://www." + siteName + ".com";
         }
