@@ -1,31 +1,50 @@
 package webTest.LoyalFriendCare.beginnerMethods;
 
-import com.microsoft.playwright.*;
-import com.microsoft.playwright.BrowserType;
-import webTest.utilities.ReusableMethods;
+import com.microsoft.playwright.Browser;
+import com.microsoft.playwright.BrowserContext;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
-import java.util.Arrays;
-
+/**
+ * Playwright için ekran boyutu ve cihaz görünüm ayarlarını yöneten yardımcı sınıf.
+ */
 public class PlaywrightScreenSizeUtils {
 
-    public static void setMaximeze(){
+    /**
+     * Masaüstü için tam ekran (Maximized) ayarlarını uygular.
+     * Viewport'u NULL yaparak içeriğin tarayıcıya tam sığmasını sağlar.
+     */
+    public static void setMaximized(Browser.NewContextOptions options) {
+        // Viewport'u null yapmak, Playwright'ın pencere boyutuna
+        // otomatik uyum sağlamasını sağlar (Login kutusunun gizlenmesini önler).
+        options.setViewportSize(null);
+    }
 
-        try (Playwright playwright = Playwright.create()) {
-            // 1. Tarayıcıyı fiziksel olarak tam ekran başlat
-            Browser browser = playwright.chromium().launch(new BrowserType.LaunchOptions()
-                    .setHeadless(false)
-                    .setArgs(Arrays.asList("--start-maximized")));
+    /**
+     * Standart Android cihaz boyutlarını ve mobil özelliklerini uygular.
+     */
+    public static void setAndroidSize(Browser.NewContextOptions options) {
+        // Genel kabul görmüş Android (Pixel/Galaxy) viewport boyutları
+        options.setViewportSize(360, 800)
+                .setIsMobile(true)
+                .setHasTouch(true)
+                .setDeviceScaleFactor(2.0); // Daha net bir mobil görünüm için
+    }
 
-            // 2. Viewport'u NULL yaparak içeriğin pencereye tam sığmasını sağla
-            // Bu adım, sağda kalan login kutusunun görünmesini sağlar.
-            BrowserContext context = browser.newContext(new Browser.NewContextOptions()
-                    .setViewportSize(null));
+    /**
+     * Bilgisayarın ekran çözünürlüğünü dinamik olarak alıp uygular.
+     */
+    public static void setPhysicalScreenSize(Browser.NewContextOptions options) {
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+        int width = (int) screenSize.getWidth();
+        int height = (int) screenSize.getHeight();
+        options.setViewportSize(width, height);
+    }
 
-            Page page = context.newPage();
-            page.navigate("https://qa.loyalfriendcare.com");
-
-            ReusableMethods.bekle(7);
-        }
-
+    /**
+     * Özel piksel değerleri ile ekran boyutunu ayarlar.
+     */
+    public static void setCustomSize(Browser.NewContextOptions options, int width, int height) {
+        options.setViewportSize(width, height);
     }
 }

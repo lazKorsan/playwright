@@ -1,0 +1,14 @@
+
+<suite name="LoyalFriendCare ">
+
+
+
+    <!-- Android Boyutunda Testler -->
+    <test name="Mobile Tests">
+        <parameter name="deviceType" value="ANDROID"/>
+        <classes>
+            <class name="webTest.LoyalFriendCare.lylTest.ilk20.US020"/>
+        </classes>
+    </test>
+
+</suite>

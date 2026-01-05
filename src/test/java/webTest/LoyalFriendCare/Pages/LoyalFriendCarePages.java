@@ -7,6 +7,9 @@ import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertTha
 public class LoyalFriendCarePages {
     private final Page page;
 
+    public static final String mail = "lazKorsan1767391364330@gmail.com";
+    public static final String password = "Loyal!1767391364331";
+
     // --- Locators ---
     private final String loginLink = "text=Log in"; 
     private final String emailInput = "input[name='email']"; 

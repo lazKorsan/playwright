@@ -1,0 +1,20 @@
+
+<suite name="LoyalFriendCare ">
+
+    <!-- Masaüstü Testleri -->
+    <test name="Desktop Tests">
+        <parameter name="deviceType" value="DESKTOP"/>
+        <classes>
+            <class name="webTest.LoyalFriendCare.lylTest.Pixel7ProEmulationTest"/>
+        </classes>
+    </test>
+
+    <!-- Android Boyutunda Testler -->
+    <test name="Mobile Tests">
+        <parameter name="deviceType" value="ANDROID"/>
+        <classes>
+            <class name="webTest.LoyalFriendCare.lylTest.US016"/>
+        </classes>
+    </test>
+
+</suite>
