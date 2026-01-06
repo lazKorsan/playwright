@@ -1,0 +1,12 @@
+C:\Users\user\IdeaProjects\playwright96\src\test\resources\features\formDoldurma.feature
+içinde
+
+ @formDoldurma
+  Scenario:
+    Given Kullanici "https://testautomationpractice.blogspot.com/" sayfasina giderR
+    Then Kullanici formu doldurur
+
+    methodlar arası geçişi stepdefinitions içinde beceremiyorum.
+
+    C:\Users\user\IdeaProjects\playwright96\src\test\java\Stepdefinitons\formDoldurmaSteps.java
+

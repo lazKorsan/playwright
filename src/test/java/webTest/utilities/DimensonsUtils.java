@@ -182,6 +182,11 @@ public class DimensonsUtils {
             case "linkedin": return "https://linkedin.com";
             case "loyalfriend": return "https://qa.loyalfriendcare.com";
             case "testotomasyonu": return "https://testotomasyonu.com/";
+            case "demoqa": return "https://demoqa.com/";
+            case "automationexercise": return "https://automationexercise.com/";
+            case "www.toolsqa": return "https://www.toolsqa.com/";
+            case "qa-practice" : return "https://www.qa-practice.com/";
+            case "herokuapp": return "https://the-internet.herokuapp.com/";
             default:
                 return siteName.startsWith("http") ? siteName : "https://www." + siteName + ".com";
         }
