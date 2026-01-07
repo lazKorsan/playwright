@@ -14,7 +14,9 @@ import java.util.Date;
 public class US040Method {
 
     // Bu metot artık Page nesnesini parametre olarak alıyor
+                       //<!-- todo  *********
     public static void formDoldurma(Page page) throws ParseException {
+
         System.out.println("Form Doldurma Metodu Çalıştı");
 
         page.getByRole(AriaRole.TEXTBOX, new Page.GetByRoleOptions().setName("Enter Name")).fill("lazKorsan");
