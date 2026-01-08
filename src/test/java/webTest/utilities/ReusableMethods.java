@@ -115,4 +115,14 @@ public class ReusableMethods {
             height = (long) page.evaluate("document.body.scrollHeight");
         }
     }
+
+    public static void verify(Runnable assertion) {
+        try {
+            assertion.run();
+            System.out.println("true");
+        } catch (Throwable e) {
+            System.out.println("false");
+            throw e;
+        }
+    }
 }
