@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Playwright Parallel Suite" parallel="tests" thread-count="4">
+
+    <!-- Her tag için ayrı test -->
+    <test name="BrowserWindows Test" parallel="methods" thread-count="1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="tag" value="@BrowserWindows"/>
+        <classes>
+            <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased"/>
+        </classes>
+    </test>
+
+    <test name="Iframe Test" parallel="methods" thread-count="1">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="tag" value="@IfarmeBasic"/>
+        <classes>
+            <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased"/>
+        </classes>
+    </test>
+
+    <test name="SuccessMessageReusable Test" parallel="methods" thread-count="1">
+        <parameter name="browser" value="chromium"/>
+        <parameter name="tag" value="@SuccesMessageReusable"/>
+        <classes>
+            <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased"/>
+        </classes>
+    </test>
+
+    <test name="SuccessMessage Test" parallel="methods" thread-count="1">
+        <parameter name="browser" value="webkit"/>
+        <parameter name="tag" value="@SuccesMessage"/>
+        <classes>
+            <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased"/>
+        </classes>
+    </test>
+
+</suite>

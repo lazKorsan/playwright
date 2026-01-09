@@ -4,8 +4,8 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.AriaRole;
 import io.cucumber.java.en.Given;
-import webTest.utilities.DimensonsUtils;
-import webTest.utilities.ReusableMethods;
+import Utilities.utilities.DimensonsUtils;
+import Utilities.utilities.ReusableMethods;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
 

@@ -1,9 +1,8 @@
 package Stepdefinitons;
 
 import io.cucumber.java.en.*;
-import webTest.LoyalFriendCare.beginnerMethods.BeforeAfter;
-import webTest.utilities.BrowserUtils;
-import webTest.utilities.ReusableMethods;
+import Utilities.LoyalFriendCare.beginnerMethods.BeforeAfter;
+import Utilities.utilities.BrowserUtils;
 
 public class MyStepdefs {
 

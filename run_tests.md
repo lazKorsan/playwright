@@ -4,8 +4,8 @@ Bu dosya, projedeki belirli testleri Maven komut satırı üzerinden nasıl çal
 
 ## Hedef Testler
 Aşağıdaki test sınıfları çalıştırılacaktır:
-1. **TestUS023** (C:\Users\user\IdeaProjects\playwright96\src\test\java\webTest\LoyalFriendCare\lylTest\ikinci20\TestUS023.java)
-2. **TestUS024** (C:\Users\user\IdeaProjects\playwright96\src\test\java\webTest\LoyalFriendCare\lylTest\ikinci20\TestUS024.java)
+1. **TestUS023** (C:\Users\user\IdeaProjects\playwright96\src\test\java\Utilities\LoyalFriendCare\lylTest\ikinci20\TestUS023.java)
+2. **TestUS024** (C:\Users\user\IdeaProjects\playwright96\src\test\java\Utilities\LoyalFriendCare\lylTest\ikinci20\TestUS024.java)
 
 ---
 
