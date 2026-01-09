@@ -14,7 +14,8 @@ import io.cucumber.testng.CucumberOptions;
         features = "src/test/resources/features",
         glue = {"Stepdefinitons", "webTest.LoyalFriendCare.beginnerMethods", "webTest.LoyalFriendCare.lylTest", "webTest.LoyalFriendCare.Pages", "webTest.utilities"},
         dryRun = false,
-        tags = "@formDoldurma",
+        //tags = "@formDoldurma",
+        tags = " @succesMessage",
         publish = true
 )
 public class TestRunner extends AbstractTestNGCucumberTests {
