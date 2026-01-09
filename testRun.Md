@@ -7,8 +7,8 @@ Bu dosya, aşağıdaki iki test class’ını çalıştırmak için örnek komut
 
 ## Test Class Yolları
 
-- C:\Users\user\IdeaProjects\playwright96\src\test\java\webTest\LoyalFriendCare\lylTest\ikinci20\TestUS023.java
-- C:\Users\user\IdeaProjects\playwright96\src\test\java\webTest\LoyalFriendCare\lylTest\ikinci20\TestUS024.java
+- C:\Users\user\IdeaProjects\playwright96\src\test\java\Utilities\LoyalFriendCare\lylTest\ikinci20\TestUS023.java
+- C:\Users\user\IdeaProjects\playwright96\src\test\java\Utilities\LoyalFriendCare\lylTest\ikinci20\TestUS024.java
 
 ## Maven ile Çalıştırma
 

@@ -5,7 +5,7 @@
     <test name="Desktop Tests">
         <parameter name="deviceType" value="DESKTOP"/>
         <classes>
-            <class name="webTest.LoyalFriendCare.lylTest.Pixel7ProEmulationTest"/>
+            <class name="Utilities.LoyalFriendCare.lylTest.Pixel7ProEmulationTest"/>
         </classes>
     </test>
 
@@ -13,7 +13,7 @@
     <test name="Mobile Tests">
         <parameter name="deviceType" value="ANDROID"/>
         <classes>
-            <class name="webTest.LoyalFriendCare.lylTest.US016"/>
+            <class name="Utilities.LoyalFriendCare.lylTest.US016"/>
         </classes>
     </test>
 

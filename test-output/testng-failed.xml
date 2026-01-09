@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [Dynamic Tag Suite]">
+  <test thread-count="4" parallel="tests" name="Test for @IfarmeBasic(failed)">
+    <groups>
+      <run>
+        <include name="@IfarmeBasic"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased">
+        <methods>
+          <include name="testIframeBasic"/>
+        </methods>
+      </class> <!-- Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased -->
+    </classes>
+  </test> <!-- Test for @IfarmeBasic(failed) -->
+  <test thread-count="4" parallel="tests" name="Test for @SuccesMessageReusable(failed)">
+    <groups>
+      <run>
+        <include name="@SuccesMessageReusable"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased">
+        <methods>
+          <include name="testSuccessMessageReusable"/>
+        </methods>
+      </class> <!-- Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased -->
+    </classes>
+  </test> <!-- Test for @SuccesMessageReusable(failed) -->
+  <test thread-count="4" parallel="tests" name="Test for @BrowserWindows and not @WIP(failed)">
+    <groups>
+      <run>
+        <include name="@BrowserWindows"/>
+        <exclude name="@WIP"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased">
+        <methods>
+          <include name="testBrowserWindows"/>
+        </methods>
+      </class> <!-- Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased -->
+    </classes>
+  </test> <!-- Test for @BrowserWindows and not @WIP(failed) -->
+  <test thread-count="4" parallel="tests" name="Test for @SuccesMessage(failed)">
+    <groups>
+      <run>
+        <include name="@SuccesMessage"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased">
+        <methods>
+          <include name="testSuccessMessage"/>
+        </methods>
+      </class> <!-- Utilities.LoyalFriendCare.lylTest.ucuncu20.US059_TagBased -->
+    </classes>
+  </test> <!-- Test for @SuccesMessage(failed) -->
+</suite> <!-- Failed suite [Dynamic Tag Suite] -->
