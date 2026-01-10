@@ -6,7 +6,7 @@ import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import org.testng.annotations.Test;
 
-public class US062 {
+public class US062DragAndDrop {
 
     @Test
     public void test01(){
@@ -46,18 +46,6 @@ public class US062 {
             System.out.println("Test Başarısız");
         }
 
-
-
-
-
-
-
-
-
-
-        //await page.locator('#item-to-be-dragged').dragTo(page.locator('#item-to-drop-at'));
-
-        //page.pause();
     }
 
 }
