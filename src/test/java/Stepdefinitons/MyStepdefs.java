@@ -1,7 +1,7 @@
 package Stepdefinitons;
 
 import io.cucumber.java.en.*;
-import Utilities.LoyalFriendCare.beginnerMethods.BeforeAfter;
+import LoyalFriendCare.beginnerMethods.BeforeAfter;
 import Utilities.utilities.BrowserUtils;
 
 public class MyStepdefs {
