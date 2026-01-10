@@ -3,7 +3,7 @@ package Stepdefinitons;
 import com.microsoft.playwright.Page;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import Utilities.LoyalFriendCare.lylTest.ikinci20.US040Method;
+import LoyalFriendCare.lylTest.ikinci20.US040Method;
 import Utilities.utilities.DimensonsUtils;
 
 import java.text.ParseException;
